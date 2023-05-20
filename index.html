@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce.com</title>
+    <link rel="stylesheet" href="./index.css"/>
+    <script src="https://kit.fontawesome.com/5dbe4277bc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <img id="logo" src="./fast-delivery.png" alt="logo" />
+        <h1 id="title">
+        <i>E-Commerce</i></h1>
+        <form id="search_form">
+            <input type="text" class="serch" placeholder="Search" id="inputSerch">
+            <button id="srcbtn" type="submit">Search</button>
+        </form>
+        <button id='signIn'>Login</button>
+        <span id="sellOpener">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+            Become a Seller</span>
+        <span>
+            <i class="fa-solid fa-cart-shopping"></i>
+            Cart</span>
+    </header>
+
+    <nav>
+        <div id="nav1">
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+        </div>
+
+        <div id="nav1">
+            <i class="fa-solid fa-users"></i>
+            <span>About Us</span>
+
+        </div>
+        <div id="nav1">
+            <i class="fa-solid fa-phone"></i>
+            <span>Contact Us</span>
+
+        </div>
+        <div id="nav1">
+            <i class="fa-solid fa-box-open"></i>
+            <span class="category_container">Categories</span>
+            <ul class="nav_category">
+                <li class="serchOption">Home</li>
+                <li class="serchOption">Sports</li>
+                <li class="serchOption">Style</li>
+                <li class="serchOption">Electronics</li>
+                <li class="serchOption">Beauty</li>
+                <li class="serchOption">Medical</li>
+            </ul>
+
+        </div>
+        <div id="nav1">
+            <i class="fa-solid fa-list"></i>
+            <span>More</span>
+        </div>
+    </nav>
+
+    <main>
+        <div class="main_container">
+        
+        </div>
+    </main>
+
+    <div class="login_module">
+        <form class="log_inform">
+            <input type="text" id="username" name="username" placeholder="Enter Email or Mobile number"/>
+            <input type="text" id="password" name="Password" placeholder="Enter Password"/>
+            <button class="login_btn">Login</button>
+        </form>
+    </div>
+
+
+    <div class="sell_module">
+        <form class="sell_form">
+            <h2>Tell us about Your Product:</h2>
+            <div class="product_info">
+                <div class="seller_detail">
+            
+                <div class="sellerDiv">
+                    <label for="firstName"> Seller first name:</label>
+                    <input type="text" name="" id="firstName" />
+                </div>
+                
+                <div class="sellerDiv">
+                    <label for="lastName"> Seller last name:</label>
+                    <input type="text" name="" id="lastName" />
+                    
+                </div>
+                
+                <div class="sellerDiv">
+                    <label for="address">Address:</label>
+                    <textarea name="add" id="addresss" ></textarea>
+
+                </div>
+
+                <div class="sellerDiv">
+                    <label for="number">Contact number:</label>
+                    <input type="text" name="" id="number" />
+                </div>
+
+                <div class="sellerDiv">
+                    <label for="email">Email ID:</label>
+                    <input type="text" name="" id="email" />
+                </div>
+
+                </div>
+                <div class="product_detail">
+                
+                <div class="sellerDiv">
+                <label for="productName"> Product Name</label>
+                <input type="text" id="productName" required/>
+                </div>
+                
+                <div class="sellerDiv">
+                <label for="manu_name"> Manufature Name </label>
+                <input type="text" id="manu_name" required/>
+                </div>
+
+                <div class="sellerDiv" >
+                    <label for="category"> Product Category</label>
+                    <select id="category" required>
+                        <option>Home and Furniture</option>
+                        <option>Sports</option>
+                        <option>Style</option>
+                        <option>Electronics</option>
+                        <option>Foods</option>
+                        <option>Medical</option>
+                    </select>
+                </div>
+
+
+                <div class="sellerDiv">
+                <label for="mrp"> Mrp</label>
+                <input type="text" id="mrp" required/>
+                </div>
+
+                <div class="sellerDiv">
+                <label for="cost"> Cost</label>
+                <input type="text" id="cost" required/>
+                </div>
+
+                <div class="sellerDiv">
+                    <label for="img_src">Product Image link</label>
+                    <input type="text" id="img_src" />
+                </div>
+
+                
+            </div>
+                </div>
+            <button  type="submit" class="create_btn" >Create</button>
+            <button class="close_btn">&times</button>
+
+        </form>
+    </div>
+
+
+<div class="paymentPage">
+ <div class="Pay_container">
+
+
+    <div class="pay" id="card">
+        <input type="radio" id="pay1" name="select_pay"/>
+        <label for="pay1">Credit / Debit / Atm card</label>
+        <div id="card_container">
+            <label for="cardNum">Enter Card Number</label>
+            <input  type="text" placeholder="Enter Card Number" id="cardNum"/>
+            <div id="select_div">
+                <span>Valid Upto</span>
+                <select>
+                    <option>MM</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                </select>
+                <select>
+                    <option>YY</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
+                    <option>32</option>
+                    <option>33</option>
+                    <option>34</option>
+                    <option>35</option>
+                </select>
+                
+            </div>
+            <label for="cvv">Enter card CVV :</label>
+            <input type="text" id="cvv" />
+    </div>
+    </div>
+    <div class="pay" id="cash">
+        <input type="radio" name="select_pay" id="pay2"/>
+        <label for="pay2">Wallets</label>
+        <div id="wallet_type">
+            <input type="radio" id="paytm" name="option"/>
+            <label for="paytm" >Paytm</label>
+            <input type="radio" id="gPay" name="option"/>
+            <label for="gPay" >G-pay</label>
+            <input type="radio" id="PhonePay" name="option"/>
+            <label for="PhonePay" >Phone Pay</label>
+        </div>
+
+    </div>
+    <div class="pay" id="cash">
+        <input type="radio" name="select_pay" id="pay3"/>
+        <label for="pay3">Cash on Delivery</label>
+    </div>
+
+    <div class="pay" id="address">
+        <label for="deli_add">Deliveery Address:</label>
+        <textarea rows="5" cols="40" type="text" id="deli_add"></textarea>
+    </div>
+    <button class="confirm">CONFIRM</button>
+    <button class="close_payment">&times</button>
+</div>
+
+</div>
+
+<script src="index.js"></script>    
+</body>
+
+</html>
