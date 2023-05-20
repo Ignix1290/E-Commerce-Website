@@ -1,0 +1,551 @@
+header{
+    padding: 1 rem;
+    display: flex;
+    background-color: rgb(118 17 189);
+    align-items: center;
+    padding :2px 20px;
+    height:50px;
+    position: relative;
+}
+
+header > img {
+    width: 40px;
+    height: 40px;
+}
+
+#title{
+    color:white;
+    padding: 5px;
+    margin-left: 5px;
+}
+.serch{
+    border: 2px solid var(--primary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-family: inherit;
+    color: rgb(14, 11, 151);
+    margin-left:80px;
+    margin-right: 5px;
+    width: 400px;
+}
+.serch:focus{
+    outline: 0px;
+}
+.serch::placeholder{
+    color: rgb(14, 11, 151);
+}
+#srcbtn{
+    border: 2px solid var(--primary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-family: inherit;
+    color: rgb(14, 11, 151);
+    background-color: rgb(247, 243, 42);
+    cursor: pointer;
+    margin-right: 30px;
+}
+#signIn {
+    border: 2px solid var(--primary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-family: inherit;
+    color:white;
+    background-color: #2874f0;
+    cursor: pointer;
+    position:absolute;
+    right: 25px;
+}
+
+#form {
+    position: absolute;
+    right: 20px;
+}
+
+header > span {
+    font-weight: 600;
+    color: white;
+    margin: 30px;
+    cursor: pointer;
+}
+
+header > span > i {
+    margin-right: 3px;
+}
+
+nav{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    position: relative;
+}
+
+nav > #nav1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:5px 10px;
+    margin: 0px 15px;
+    cursor: pointer;
+    position: relative;
+}
+
+nav > #nav1 > i {
+    color: #2874f0;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+}
+
+nav > #nav1 > span {
+    padding: 4px 5px 0px 5px;
+    margin: 0;
+}
+
+nav > #nav1:hover {
+    background-color: rgb(210 193 235);
+    border-radius: 20px;
+}
+
+.serchOption {
+    font-size: 16px;
+    padding: 5px 5px;
+}
+
+.serchOption:hover{
+    background-color: black;
+    color: white;
+}
+
+
+nav >#user {
+    position: absolute;
+    right: 30px;
+}
+
+.nav_category {
+    background-color: white;
+    width: 160px;
+    position: absolute;
+    top:120px;
+    left:80%;
+    transform:translate(-50%,-50%)scale(0);
+    /* visibility: hidden; */
+    transition: 200ms ease-in-out;
+    border: solid 1px black;
+    z-index:10;
+    background-color: #f2f2f2;
+    font-size: 14px;
+    padding: 10px 15px;
+    list-style: none;
+}
+
+.list_active {
+    transform:translate(-50%,-50%)scale(1);
+}
+
+
+#nav_category > li {
+    font-size: 14px;
+    /* color: gray; */
+    padding: 5px;
+}
+
+#nav_category > li:hover{
+    background-color: white;
+}
+
+
+#main{  /*movies  cards Container*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    box-shadow: 1px 1px 5px rgb(245, 237, 237);
+    height: 600px;
+    overflow: auto;
+}
+
+
+.productCard{  /* all indivual product card (div)*/
+    width: 200px;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 0.2px 4px 5px rgb(20, 2, 2);
+    background-color: var(--secondary-color);
+    position: relative;
+    overflow:hidden;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+
+.productCard img {  /* Every movie image */
+    width: 150px;
+    /* height:300px; */
+    padding: auto;
+}
+
+.productCard img:hover{
+    transform: scale(1.1);
+}
+
+
+.productInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.productInfo h2{  /* movie title*/
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 100%;
+    text-align: center;
+    /* color:rgb(106, 25, 199); */
+
+}
+
+.productInfo .price {  /* movie lang and rating productCard*/
+    
+}
+
+.productInfo .discount {
+    color: green;
+}
+.productInfo .company {
+    color: gray;
+
+}
+
+.productInfo > span {
+    padding: 5px;
+}
+
+.main_container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(210 193 235);
+    padding: 30px;
+}
+
+.desktop-menu-category-list {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+/* 
+.active{
+    scale:1;
+
+} */
+
+.login_module {
+display: flex;
+align-items: center;
+    justify-content: center;
+  max-width:80%;
+  background-color: white;
+  max-height:70%;
+  width: 500px;
+  height:300px;
+  position: fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%)scale(0);
+  transition: 200ms ease-in-out;
+  border: solid 1px black;
+  border-radius:20px;
+  z-index:10;
+  background-color: #f2f2f2;
+}
+
+.pop_up{
+    transform:translate(-50%,-50%)scale(1);
+}
+
+
+.log_inform {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.log_inform > input {
+    padding: 10px;
+    width: 250px;
+    margin: 10px 5px;
+    /* border: none; */
+    border-radius: 3px;
+    outline: none;
+
+}
+
+.login_btn{  /* btn within the module*/
+    margin-top: 40px;
+    width:100px;
+    height: 30px;
+    /* transform:200ms ease-in-out; */
+}
+
+.login_btn:active{
+    scale: 0.8;
+    
+}
+
+
+.sell_form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+
+.product_info {
+    display: flex;
+    justify-content:space-evenly;
+    width: 90%;
+    border: 1 px green solid;
+    /* margin: 0px; */
+
+}
+
+.sell_form >h2 {
+    width: 100%;
+    text-align: center;
+    /* margin: 0px; */
+}
+
+.seller_detail{
+    padding: 10px;
+    margin: 20px;
+}
+
+.product_detail{
+    padding: 10px;
+    margin: 20px;
+}
+
+
+.sell_module {
+    display: flex;
+align-items: center;
+    justify-content: center;
+  background-color: white;
+  width: 1000px;
+  position: fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%)scale(0);
+  transition: 200ms ease-in-out;
+  border: solid 1px black;
+  border-radius:20px;
+  z-index:10;
+  background-color: #f2f2f2;
+}
+
+.pop{
+    transform:translate(-50%,-50%)scale(1);
+}
+
+.sellerDiv > label {
+    width: 100%;
+    display: block;
+    font-size: 18px;
+    /* color: red; */
+    font-weight: 600;
+}
+
+.sellerDiv > input {
+    width: 300px;
+    display: block;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.sellerDiv >textarea {
+    height: 70px;
+    width: 306px;
+}
+
+
+
+.productDiv > input {
+    /* padding: 0px; */
+    /* margin: 0px; */
+    width: 100%;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    /* background-color: green; */
+}
+
+.productDiv > label {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.sellerDiv > #category{
+    width: 200px;
+    height: 20px;
+    /* padding: 10px; */
+    font-size: 16px;
+    margin-bottom: 10px;
+
+}
+.sellerDiv > #category > option {
+    padding: 10px;
+    margin: 10px;
+}
+
+.create_btn {
+    border: 2px solid var(--primary-color);
+    padding: 0.5rem 2rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-family: inherit;
+    color:white;
+    background-color: #2874f0;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.create_btn:active {
+    scale: 0.8;
+}
+
+.close_btn {
+     font-size: 20px;
+     font-weight: 600;
+     position: absolute;
+    right: 15px;
+    top: 15px;
+    border: none;
+    cursor: pointer;
+}
+.close_btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.paymentPage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width:90vw;
+    height: 90vh;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%)scale(0);
+    transition: 200ms ease-in-out;
+    border: solid 1px black;
+    border-radius:20px;
+    z-index:10;
+    background-color: #f2f2f2;
+}
+
+.showPayContainer {
+    transform:translate(-50%,-50%)scale(1);
+}
+
+.Pay_container{
+    /* border: 1px red solid; */
+    padding: 20px 20px;
+    border-radius: 20px;
+    background-color: aqua;
+    background-image: url("https://www.wikihow.com/images/thumb/5/5f/Make-Fake-Money-Step-14-Version-3.jpg/aid466519-v4-1200px-Make-Fake-Money-Step-14-Version-3.jpg");
+    object-fit: contain;
+}
+
+.pay > label {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 5px;
+    padding: 10px 5px;
+    display: inline-block;
+    width: 80%;
+}
+
+#card_container{
+    margin-left: 35px;
+
+}
+
+#card_container > label {
+    width: 150px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#card_container > input {
+    margin-bottom: 10px;
+    height: 20px;
+}
+
+#select_div > span {
+    width: 150px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#select_div > select {
+    margin-bottom: 10px;
+    height: 20px;
+}
+
+#wallet_type {
+    margin-left: 35px;
+}
+
+#address {
+    margin-left: 40px;
+    /* display: inline-block; */
+}
+
+#address > label {
+    margin-left: -10px;
+}
+
+.Pay_container > button {
+    border: 2px solid var(--primary-color);
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-family: inherit;
+    color:white;
+    background-color: #2874f0;
+    cursor: pointer;
+    margin:  10px 40px;
+    font-weight: 600;
+}
+
+.close_payment {
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+   right: 15px;
+   top: 15px;
+   border: none;
+   cursor: pointer;
+}
+.close_payment:hover{
+   background-color: black;
+   color: white;
+}
